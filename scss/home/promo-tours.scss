@@ -1,0 +1,67 @@
+.promo-tours {
+    max-width: 1280px;
+    min-height: 304px;
+    //background-color: cadetblue;
+    margin: -50px auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 150px; 
+    padding-right: 150px; 
+    
+
+    .promo {
+        height: 304px;
+        width: 236px;
+        background-color: bisque;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30 px;
+       
+        .header {
+            font-family: GillSans;
+            font-size: 40px;
+            margin-bottom: 15px;
+
+        }
+        .price {
+            margin-bottom: 70px;
+        }
+        .learn-more {
+            background-color: $site-blue;
+            padding: 10px 30px;
+            border-radius: 20px;
+        }
+
+
+    }
+    .israel {
+        background-image:  $overlay, url(../images/tour-01.jpg);;
+        
+    }
+    .usa {
+        background-image: $overlay, url(../images/tour-02.jpg);
+    }
+    .austrailia {
+        background-image: $overlay, url(../images/tour-03.jpg);
+    }
+
+}
+
+@media only screen and (max-width: 1060px) {
+    .promo-tours {
+        width : 236px;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        .promo {
+            margin-bottom: 30 px;
+        }
+    }
+}

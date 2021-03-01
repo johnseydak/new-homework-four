@@ -1,0 +1,44 @@
+.hero {
+    max-width: 1280px;
+    height: 500px;
+    background-image: $overlay, url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    padding-top: 20px;
+
+        //.nav {
+
+            //.logo {
+
+            //}
+            //.links {
+                //font-family: "GillSans";
+            //}
+
+       //}
+       .bannertext{
+           text-align: center;
+           font-size: 50px;
+           color: white;
+           padding-top: 80px;
+
+       }
+       .lorem {
+            text-align: center;
+            color: white;
+       }
+       .readmore {
+            background-color: $site-blue;
+            padding: 15px 30px;
+            //border-radius: 20px;
+            width: 150px;
+            //position:relative;
+            text-align: center;
+            left:565px;
+            top: 50px;
+            color:white;
+            margin: 0 auto;
+        }
+}
