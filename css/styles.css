@@ -57,7 +57,7 @@ p {
 .promo-tours {
   max-width: 1280px;
   min-height: 304px;
-  margin: -50px auto;
+  margin: -50px auto 0 auto;
   display: flex;
   justify-content: space-around;
   padding-left: 150px;
@@ -106,9 +106,10 @@ p {
     flex-direction: column;
     padding-left: 0px;
     padding-right: 0px;
+    justify-content: center;
   }
   .promo-tours .promo {
-    margin-bottom: 30 px;
+    margin-bottom: 30px;
   }
 }
 footer {
@@ -158,7 +159,6 @@ footer .socialmedia {
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  justify-content: space-between;
 }
 .booking-form .col1 .name {
   margin-top: -10px;
@@ -212,10 +212,11 @@ footer .socialmedia {
   border: #79ADDC solid 1px;
 }
 .booking-form .people {
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 900px;
+  margin: auto;
 }
 .booking-form .people .adult {
   height: 45px;
@@ -247,13 +248,51 @@ footer .socialmedia {
 
 @media only screen and (max-width: 1060px) {
   .booking-form {
-    width: 100%;
-    flex-direction: column;
-    padding-left: 0px;
-    padding-right: 0px;
+    width: 80%;
+    flex-direction: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0 auto;
   }
-  .booking-form .promo {
-    margin-bottom: 30 px;
+  .booking-form .h1 {
+    width: 80%;
+    margin: 0 auto;
+    width: 400px;
+  }
+  .booking-form .col1 {
+    margin: 0 auto;
+    width: 80%;
+    width: 400px;
+  }
+  .booking-form .col1 .check-in {
+    margin-left: 0px;
+    width: 400px;
+  }
+  .booking-form .col1 .check-out {
+    margin-left: 0px;
+    padding-bottom: 30px;
+    width: 400px;
+  }
+  .booking-form .col2 {
+    width: 80%;
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .booking-form .col2 .email {
+    width: 400px;
+  }
+  .booking-form .col2 .hotel {
+    width: 400px;
+  }
+  .booking-form .people {
+    width: 80%;
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 40px;
+  }
+  .booking-form .message {
+    width: 100%;
   }
 }
 .nav {
@@ -289,4 +328,10 @@ footer .socialmedia {
   color: #fff;
   margin: auto;
   text-transform: lowercase;
+}
+
+@media only screen and (max-width: 1060px) {
+  .nav {
+    width: 80%;
+  }
 }

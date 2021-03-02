@@ -2,7 +2,7 @@
     max-width: 1280px;
     min-height: 304px;
     //background-color: cadetblue;
-    margin: -50px auto;
+    margin: -50px auto 0 auto;
     display: flex;
     justify-content: space-around;
     padding-left: 150px; 
@@ -56,12 +56,15 @@
 @media only screen and (max-width: 1060px) {
     .promo-tours {
         width : 236px;
+        //width: 304px;
         flex-direction: column;
         padding-left: 0px;
         padding-right: 0px;
+        justify-content: center;
+        
 
         .promo {
-            margin-bottom: 30 px;
+            margin-bottom: 30px;
         }
     }
 }
